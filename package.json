@@ -1,0 +1,24 @@
+{
+  "name": "shopify-whatsapp-ai-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "ai",
+    "whatsapp",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:all": "docker-compose up --build",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:ai": "cd ai && npm run dev",
+    "dev:whatsapp": "cd whatsapp && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:all": "pnpm -w -s run build || (cd backend && npm run build) || true",
+    "lint": "echo \"Run lint in each package as needed\"",
+    "start:all": "docker-compose up -d"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

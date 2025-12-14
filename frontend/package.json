@@ -1,0 +1,35 @@
+{
+  "name": "shopify-whatsapp-ai-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "chart.js": "^4.4.0",
+    "clsx": "^1.2.1",
+    "js-cookie": "^3.0.5",
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "socket.io-client": "^4.8.1",
+    "swr": "^2.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.2.21",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.46.0",
+    "eslint-config-next": "14.0.0",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.5.6"
+  }
+}
